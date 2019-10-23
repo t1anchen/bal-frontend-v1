@@ -15,7 +15,7 @@
         <AppBar />
       </el-header>
       <el-main>
-        <Content />
+        <router-view></router-view>
       </el-main>
     </el-container>
   </div>
@@ -24,14 +24,12 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import AppBar from "./components/AppBar.vue";
-import Content from "./components/Content.vue";
 
 export default {
   name: "app",
   components: {
     AppBar,
-    Content
-  }
+  },
 };
 </script>
 

@@ -3,14 +3,18 @@
     <h1>Blue Angel Lab</h1>
     <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect">
       <el-menu-item index="1">
+        <router-link to="/">
         <el-tooltip class="item" effect="dark" content="Home" placement="bottom">
           <i class="el-icon-s-home"></i>
         </el-tooltip>
+        </router-link>
       </el-menu-item>
       <el-menu-item index="2">
-        <el-tooltip class="item" effect="dark" content="Explore" placement="bottom">
-          <i class="el-icon-discover"></i>
-        </el-tooltip>
+        <router-link to="/explore">
+          <el-tooltip class="item" effect="dark" content="Explore" placement="bottom">
+            <i class="el-icon-discover"></i>
+          </el-tooltip>
+        </router-link>
       </el-menu-item>
       <el-menu-item index="3">
         <el-tooltip class="item" effect="dark" content="About Us" placement="bottom">
